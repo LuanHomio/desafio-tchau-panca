@@ -23,4 +23,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://thiagoandradepersonal.com.br/sitemap.xml
+Sitemap: https://www.thiagoandradepersonal.com.br/sitemap.xml

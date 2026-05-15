@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="geo.region" content="BR-ES">
     <meta name="geo.placename" content="Espírito Santo">
-    <link rel="canonical" href="https://thiagoandradepersonal.com.br/">
+    <link rel="canonical" href="https://www.thiagoandradepersonal.com.br/">
     <title>Desafio Tchau Pança — 21 dias pra perder barriga | Thiago Andrade Personal</title>
 
     <!-- Favicon -->
@@ -21,18 +21,21 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thiago Andrade Personal">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:url" content="https://thiagoandradepersonal.com.br/">
+    <meta property="og:url" content="https://www.thiagoandradepersonal.com.br/">
     <meta property="og:title" content="Desafio Tchau Pança — 21 dias pra perder barriga">
     <meta property="og:description" content="Treinos curtos de 20-25min, alimentação sem neura e acompanhamento diário. Comece hoje por R$ 97.">
-    <meta property="og:image" content="https://thiagoandradepersonal.com.br/thiago-andrade.jpg">
+    <meta property="og:image" content="https://www.thiagoandradepersonal.com.br/thiago-andrade.jpg">
     <meta property="og:image:alt" content="Thiago Andrade, personal trainer do Desafio Tchau Pança">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Desafio Tchau Pança — 21 dias pra perder barriga">
     <meta name="twitter:description" content="Treinos curtos, alimentação simples e acompanhamento diário com o personal Thiago Andrade. R$ 97.">
-    <meta name="twitter:image" content="https://thiagoandradepersonal.com.br/thiago-andrade.jpg">
+    <meta name="twitter:image" content="https://www.thiagoandradepersonal.com.br/thiago-andrade.jpg">
     
+    <!-- Preload LCP image (hero) -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop" fetchpriority="high">
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPFG5XKN69"></script>
     <script>
@@ -55,8 +58,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Google Fonts: Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Montserrat (non-blocking) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
 
     <style>
         /* 
@@ -403,21 +408,21 @@
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "https://thiagoandradepersonal.com.br/#organization",
+          "@id": "https://www.thiagoandradepersonal.com.br/#organization",
           "name": "Thiago Andrade Personal - Coaching & Treinamento",
-          "url": "https://thiagoandradepersonal.com.br/",
-          "logo": "https://thiagoandradepersonal.com.br/thiago-andrade.jpg",
+          "url": "https://www.thiagoandradepersonal.com.br/",
+          "logo": "https://www.thiagoandradepersonal.com.br/thiago-andrade.jpg",
           "areaServed": { "@type": "Country", "name": "Brasil" },
-          "founder": { "@id": "https://thiagoandradepersonal.com.br/#thiago" }
+          "founder": { "@id": "https://www.thiagoandradepersonal.com.br/#thiago" }
         },
         {
           "@type": "Person",
-          "@id": "https://thiagoandradepersonal.com.br/#thiago",
+          "@id": "https://www.thiagoandradepersonal.com.br/#thiago",
           "name": "Thiago Andrade",
           "jobTitle": "Personal Trainer",
-          "image": "https://thiagoandradepersonal.com.br/thiago-andrade.jpg",
-          "url": "https://thiagoandradepersonal.com.br/",
-          "worksFor": { "@id": "https://thiagoandradepersonal.com.br/#organization" },
+          "image": "https://www.thiagoandradepersonal.com.br/thiago-andrade.jpg",
+          "url": "https://www.thiagoandradepersonal.com.br/",
+          "worksFor": { "@id": "https://www.thiagoandradepersonal.com.br/#organization" },
           "knowsAbout": [
             "Emagrecimento",
             "Treino em casa",
@@ -430,13 +435,13 @@
         },
         {
           "@type": "Product",
-          "@id": "https://thiagoandradepersonal.com.br/#produto",
+          "@id": "https://www.thiagoandradepersonal.com.br/#produto",
           "name": "Desafio Tchau Pança",
           "description": "Programa digital de 21 dias para perder barriga, com treinos curtos de 20-25 minutos, guia alimentar simples e acompanhamento diário. Adaptável para iniciantes, intermediários e avançados, com treinos para fazer em casa ou na academia.",
-          "image": "https://thiagoandradepersonal.com.br/thiago-andrade.jpg",
+          "image": "https://www.thiagoandradepersonal.com.br/thiago-andrade.jpg",
           "category": "Curso digital de emagrecimento",
-          "brand": { "@id": "https://thiagoandradepersonal.com.br/#organization" },
-          "url": "https://thiagoandradepersonal.com.br/",
+          "brand": { "@id": "https://www.thiagoandradepersonal.com.br/#organization" },
+          "url": "https://www.thiagoandradepersonal.com.br/",
           "offers": {
             "@type": "Offer",
             "price": "97.00",
@@ -509,10 +514,10 @@
         },
         {
           "@type": "WebSite",
-          "@id": "https://thiagoandradepersonal.com.br/#website",
-          "url": "https://thiagoandradepersonal.com.br/",
+          "@id": "https://www.thiagoandradepersonal.com.br/#website",
+          "url": "https://www.thiagoandradepersonal.com.br/",
           "name": "Thiago Andrade Personal",
-          "publisher": { "@id": "https://thiagoandradepersonal.com.br/#organization" },
+          "publisher": { "@id": "https://www.thiagoandradepersonal.com.br/#organization" },
           "inLanguage": "pt-BR"
         }
       ]
@@ -775,17 +780,19 @@
 
         document.addEventListener("DOMContentLoaded", function () {
             var reveals = document.querySelectorAll(".reveal");
-            function revealOnScroll() {
-                var windowHeight = window.innerHeight;
-                var elementVisible = 100;
-                reveals.forEach(function (reveal) {
-                    if (reveal.getBoundingClientRect().top < windowHeight - elementVisible) {
-                        reveal.classList.add("active");
+            if (!("IntersectionObserver" in window)) {
+                reveals.forEach(function (r) { r.classList.add("active"); });
+                return;
+            }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        io.unobserve(entry.target);
                     }
                 });
-            }
-            window.addEventListener("scroll", revealOnScroll);
-            revealOnScroll();
+            }, { rootMargin: "0px 0px -100px 0px" });
+            reveals.forEach(function (r) { io.observe(r); });
         });
     </script>
 </body>
