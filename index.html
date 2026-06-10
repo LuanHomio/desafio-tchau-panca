@@ -255,15 +255,32 @@
 
         /* HERO - MODERNIZED */
         .hero {
-            padding: 100px 0 120px 0;
+            padding: 80px 0 90px 0;
             background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
-            background-attachment: scroll; 
+            background-attachment: scroll;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        /* Hero headline — fluid sizing so a long copy não enche a tela */
+        .hero .container { max-width: 760px; }
+        .hero h1 {
+            font-size: clamp(1.7rem, 3.6vw, 2.5rem);
+            line-height: 1.14;
+            letter-spacing: -0.5px;
+            margin-bottom: 1.4rem;
+        }
+        .hero-eyebrow {
+            font-size: 0.9rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-green-light);
+            margin-bottom: 14px;
         }
 
         /* Overlay Dark Gradient */
@@ -549,7 +566,7 @@
     <!-- 🔥 DOBRA 1 — HERO -->
     <header class="hero text-center">
         <div class="container reveal active">
-            <p style="font-size: 0.95rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--color-green-light); margin-bottom: 15px;">Desafio Tchau Pança em 21 dias</p>
+            <p class="hero-eyebrow">Desafio Tchau Pança em 21 dias</p>
             <h1>Ative hoje mesmo o desafio que já ajudou dezenas de pessoas a perder <span class="highlight-red">até 8 kg de barriga em 21 dias</span> sem treinos malucos ou dietas mais malucas ainda.</h1>
             <p class="hero-sub">
                 Eu vou te dar acesso ao método que eu criei e validei nos últimos 15 anos.
